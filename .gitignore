@@ -1,0 +1,23 @@
+.DS_Store
+node_modules
+.env
+.vscode
+
+# Hardhat files
+/cache
+/artifacts
+
+# TypeChain files
+/typechain
+/typechain-types
+
+# solidity-coverage files
+/coverage
+/coverage.json
+/.idea/
+/.openzeppelin
+
+# Ignore specific files in the deployments folder
+/deployments/blast_sepolia/
+/deployments/localhost/
+/deployments/hardhat/
