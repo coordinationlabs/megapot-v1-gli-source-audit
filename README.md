@@ -18,3 +18,5 @@ Matching the Contract Creation code is easy, we can simply directly pull the `by
 ## Running the code
 1. `yarn install` all dependencies
 2. Call `npm run gli-verify <contract_address> <filename>` in our case this will be `npm run gli-verify 0x26Eb7396e72b8903746b0133f7692dd1Fa86BC13 contracts/BaseJackpot.sol`
+3. This will output the Contract Creation code, followed by the deployedBytecode
+4. These outputs can then be compared against the same fields that can be found at the bottom of this webpage: https://basescan.org/address/0x26eb7396e72b8903746b0133f7692dd1fa86bc13#code
