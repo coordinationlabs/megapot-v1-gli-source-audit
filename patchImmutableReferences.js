@@ -1,7 +1,7 @@
 // extractImmutable.js
 import fs from 'fs';
 
-const filePath = 'artifacts/build-info/e01fc4b1d6d91c1d6239973097fcaaad.json';
+const filePath = 'artifacts/build-info/31cab92a051cdb732411651879f9f497.json';
 const addressToVerify = process.argv[2];
 const fileToVerify = process.argv[3];
 

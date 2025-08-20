@@ -20,9 +20,9 @@ contract TestEntropy is IEntropy {
     function withdraw(uint128 amount) external override {}
 
     function request(
-        address provider,
-        bytes32 userCommitment,
-        bool useBlockHash
+        address /* provider */,
+        bytes32 /* userCommitment */,
+        bool /* useBlockHash */
     ) external payable override returns (uint64 assignedSequenceNumber) {
         return 0;
     }
@@ -37,11 +37,11 @@ contract TestEntropy is IEntropy {
     }
 
     function reveal(
-        address provider,
-        uint64 sequenceNumber,
-        bytes32 userRevelation,
-        bytes32 providerRevelation
-    ) external override returns (bytes32 randomNumber) {
+        address /* provider */,
+        uint64 /* sequenceNumber */,
+        bytes32 /* userRevelation */,
+        bytes32 /* providerRevelation */
+    ) external pure override returns (bytes32 randomNumber) {
         return bytes32(0);
     }
 
@@ -83,7 +83,7 @@ contract TestEntropy is IEntropy {
 
     function getAccruedPythFees()
         external
-        view
+        pure
         override
         returns (uint128 accruedPythFeesInWei)
     {
@@ -95,15 +95,15 @@ contract TestEntropy is IEntropy {
     function setProviderUri(bytes calldata newUri) external override {}
 
     function constructUserCommitment(
-        bytes32 userRandomness
+        bytes32 /* userRandomness */
     ) external pure override returns (bytes32 userCommitment) {
         return bytes32(0);
     }
 
     function combineRandomValues(
-        bytes32 userRandomness,
-        bytes32 providerRandomness,
-        bytes32 blockHash
+        bytes32 /* userRandomness */,
+        bytes32 /* providerRandomness */,
+        bytes32 /* blockHash */
     ) external pure override returns (bytes32 combinedRandomness) {
         return bytes32(0);
     }
